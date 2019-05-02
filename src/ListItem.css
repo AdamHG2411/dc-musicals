@@ -1,0 +1,15 @@
+.ListItem-Button {
+	width: 100%;
+	height: 4em;
+	background: grey;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: .5em;
+	border-radius: 10px;
+}
+
+.ListItem-Dates {
+	font-weight: 400;
+}

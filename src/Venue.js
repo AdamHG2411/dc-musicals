@@ -5,7 +5,7 @@ class Venue extends Component {
 	render() {
 		return (
 			<div className="Venue">
-				<h2>This is the venue</h2>
+				<h2>Venue</h2>
 			</div>
 		);
 	}
