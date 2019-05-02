@@ -1,13 +1,16 @@
 .ListItem-Button {
 	width: 100%;
-	height: 4em;
+	height: auto;
 	background: grey;
 	color: white;
 	font-family: Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 14px;
-	line-height: .5em;
+	line-height: .1em;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 
 .ListItem-Dates {

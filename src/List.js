@@ -3,21 +3,51 @@ import ListItem from './ListItem.js';
 import './List.css';
 
 class List extends Component {
-	render() {
-		let sampleObject = {
-			musicalName: 'Hamilton',
-			venue: 'Kennedy Center',
-			dates: {
-				start: '2019-03-21T00:00:00.000Z',
-				end: '2019-05-19T00:00:00.000Z'
-			}
+	constructor(props) {
+		super(props);
+		this.state = {
+			data: null,
+			musicals: null,
+			venues: null,
+			startDates: null,
+			endDates: null
 		};
-		return (
-			<div className="List">
-				<h2>Upcoming Performances</h2>
-				<ListItem {...sampleObject} />
-			</div>
-		);
+	}
+	render() {
+		let buttons = [];
+
+		if (this.state.data !== null) {
+			let sortedData = this.state.data.sort(function(a, b) {
+				let keyA = new Date(a.dates.start);
+				let keyB = new Date(b.dates.start);
+				if (keyA < keyB) return -1;
+				if (keyA > keyB) return 1;
+				return 0;
+			});
+			for (let i = 0; i < sortedData.length; i++) {
+				sortedData[i].key = i;
+				buttons.push(sortedData[i]);
+			}
+			return (
+				<div className="List">
+					<h2>Upcoming Performances</h2>
+					{buttons.map((button) => <ListItem {...button} />)}
+				</div>
+			);
+		} else {
+			return (
+				<div className="List">
+					<h2>Upcoming Performances</h2>
+					<p>Data not found</p>
+				</div>
+			);
+		}
+	}
+
+	componentDidMount() {
+		fetch('https://musicals-api.herokuapp.com/api/performances/').then((res) => res.json()).then((data) => {
+			this.setState({ data: data });
+		});
 	}
 }
 
