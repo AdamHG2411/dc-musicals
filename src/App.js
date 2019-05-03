@@ -5,13 +5,6 @@ import Venue from './Venue.js';
 import Musical from './Musical.js';
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			data: null
-		};
-	}
-
 	render() {
 		return (
 			<div className="App">
@@ -19,7 +12,9 @@ class App extends Component {
 				<div className="App-Body">
 					<List className="App-PerformanceList" />
 					<div className="App-SelectedPerformance">
+						<h2>Venue</h2>
 						<Venue className="App-SelectedVenue" />
+						<h2>Musical</h2>
 						<Musical className="App-SelectedMusical" />
 					</div>
 				</div>

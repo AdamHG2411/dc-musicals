@@ -11,6 +11,8 @@
 	flex-direction: column;
 	align-content: center;
 	line-height: 1.4;
+	margin: 5px 0;
+	padding: .5em;
 }
 
 .ListItem-Button p {
@@ -20,4 +22,8 @@
 
 .ListItem-Dates {
 	font-weight: 400;
+}
+
+button.selected {
+	background: teal;
 }
