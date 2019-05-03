@@ -1,4 +1,7 @@
 .List {
 	width: auto;
 	max-width: 40%;
+	height: auto;
+	max-height: 500px;
+	overflow: scroll;
 }

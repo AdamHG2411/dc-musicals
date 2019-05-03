@@ -34,7 +34,7 @@ class List extends Component {
 			return (
 				<div className="List">
 					<h2>Upcoming Performances</h2>
-					<p>Data not found</p>
+					<p>Loading</p>
 				</div>
 			);
 		}

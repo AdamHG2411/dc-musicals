@@ -12,7 +12,12 @@ class Venue extends Component {
 				</div>
 				<div className="Venue-Tickets">
 					<p className="Venue-TicketCost">Approx. Cost: $27 - $81</p>
-					<button className="Venue-Tickets">Get Tickets</button>
+					<a className="Venue-GetTickets" href="https://www.fords.org">
+						Get Tickets
+					</a>
+					{/* <button className="Venue-Tickets" href="https://www.fords.org">
+						Get Tickets
+					</button> */}
 				</div>
 			</div>
 		);
