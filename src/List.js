@@ -6,11 +6,7 @@ class List extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: null,
-			musicals: null,
-			venues: null,
-			startDates: null,
-			endDates: null
+			data: null
 		};
 	}
 	render() {
