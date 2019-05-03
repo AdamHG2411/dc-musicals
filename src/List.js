@@ -33,7 +33,6 @@ class List extends Component {
 		} else {
 			return (
 				<div className="List">
-					<h2>Upcoming Performances</h2>
 					<p>Loading</p>
 				</div>
 			);
