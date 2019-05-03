@@ -24,7 +24,10 @@
 }
 
 .App-UpcomingList {
-	width: 50%;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 40%;
 }
 
 .App-SelectedPerformance {
