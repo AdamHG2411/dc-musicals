@@ -24,12 +24,7 @@ class List extends Component {
 				sortedData[i].key = i;
 				buttons.push(sortedData[i]);
 			}
-			return (
-				<div className="List">
-					<h2>Upcoming Performances</h2>
-					{buttons.map((button) => <ListItem {...button} />)}
-				</div>
-			);
+			return <div className="List">{buttons.map((button) => <ListItem {...button} />)}</div>;
 		} else {
 			return (
 				<div className="List">

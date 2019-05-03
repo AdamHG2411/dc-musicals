@@ -10,8 +10,10 @@ class App extends Component {
 			<div className="App">
 				<h1 className="App-Header">DC Musicals</h1>
 				<div className="App-Body">
-					<h2>Upcoming Performances</h2>
-					<List className="App-PerformanceList" />
+					<div className="App-UpcomingList">
+						<h2>Upcoming Performances</h2>
+						<List className="App-PerformanceList" />
+					</div>
 					<div className="App-SelectedPerformance">
 						<h2>Venue</h2>
 						<Venue className="App-SelectedVenue" />
