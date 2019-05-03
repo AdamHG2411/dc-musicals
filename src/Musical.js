@@ -18,7 +18,7 @@ class Musical extends Component {
 					<p className="Musical-Name">Into the Woods (1986)</p>
 					<p className="Musical-Composer">Stephen Sondheim</p>
 					<p className="Musical-Wikipedia">
-						<a href="https://www.wikipedia.org">Learn More</a>
+						<a href="https://en.wikipedia.org/wiki/Into_the_Woods">Learn More</a>
 					</p>
 				</div>
 				<div>
