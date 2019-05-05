@@ -4,25 +4,16 @@ import './ListItem.css';
 class ListItem extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			selected: null
-		};
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(evt) {
 		evt.preventDefault();
-		for (let i = 0; i < document.querySelectorAll('.selected').length; i++) {
-			if (document.querySelectorAll('.selected')[i].classList.contains('selected')) {
-				document.querySelectorAll('.selected')[i].classList.remove('selected');
-			}
-		}
-		if (evt.target.classList.contains('selected') === false) {
-			evt.target.classList.add('selected');
-			this.setState({ selected: this.performance });
-			console.log(this.state.selected);
-		}
+		console.log('ListItem: handleClick');
+		let selectedObj = this.props.performance;
+		this.props.updateSelection(selectedObj);
 	}
 	render() {
+		console.log('ListItem: render');
 		return (
 			<button className="ListItem-Button" onClick={this.handleClick}>
 				<p>{this.props.performance.musicalName}</p>

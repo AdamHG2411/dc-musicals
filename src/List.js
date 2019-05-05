@@ -11,21 +11,23 @@ class List extends Component {
 		this.componentDidMount = this.componentDidMount.bind(this);
 	}
 	render() {
-		if (this.props.listedPerformances.length === 0 || this.props.listedPerformances === undefined) {
-			return null;
-		} else {
+		console.log('List: render');
+		if (this.props.listedPerformances) {
 			return (
 				<div className="List">
 					{this.props.listedPerformances.map((performance) => (
-						<ListItem onClick={this.handleSelection} {...performance} />
+						<ListItem {...performance} updateSelection={this.props.updateSelection} />
 					))}
 				</div>
 			);
+		} else {
+			console.log('data not loaded');
+			return null;
 		}
 	}
 	componentDidMount() {
+		console.log('List: componentDidMount');
 		if (this.props.listedPerformances.length === 0 || this.props.listedPerformances === undefined) {
-			setTimeout(this.componentDidMount, 500);
 			return null;
 		} else {
 			this.setState({ dataLoaded: true });
