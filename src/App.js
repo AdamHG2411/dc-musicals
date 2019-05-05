@@ -17,8 +17,8 @@ class App extends Component {
 		this.componentDidMount = this.componentDidMount.bind(this);
 		this.handleSelection = this.handleSelection.bind(this);
 	}
-	handleSelection() {
-		this.setState({ selection: document.querySelector('.selected') });
+	handleSelection(evt) {
+		this.setState({ selection: evt.target.props });
 		console.log(this.state.selection);
 	}
 	render() {

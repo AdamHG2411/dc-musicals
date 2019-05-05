@@ -16,7 +16,9 @@ class List extends Component {
 		} else {
 			return (
 				<div className="List">
-					{this.props.listedPerformances.map((performance) => <ListItem {...performance} />)}
+					{this.props.listedPerformances.map((performance) => (
+						<ListItem onClick={this.handleSelection} {...performance} />
+					))}
 				</div>
 			);
 		}

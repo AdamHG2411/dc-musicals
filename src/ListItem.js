@@ -5,7 +5,7 @@ class ListItem extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selected: false
+			selected: null
 		};
 		this.handleClick = this.handleClick.bind(this);
 	}
@@ -18,6 +18,8 @@ class ListItem extends Component {
 		}
 		if (evt.target.classList.contains('selected') === false) {
 			evt.target.classList.add('selected');
+			this.setState({ selected: this.performance });
+			console.log(this.state.selected);
 		}
 	}
 	render() {
