@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './ListItem.css';
 
 class ListItem extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			selected: false
 		};
@@ -11,8 +11,6 @@ class ListItem extends Component {
 	}
 	handleClick(evt) {
 		evt.preventDefault();
-		console.log(evt.target);
-		console.log(document.querySelectorAll('.selected'));
 		for (let i = 0; i < document.querySelectorAll('.selected').length; i++) {
 			if (document.querySelectorAll('.selected')[i].classList.contains('selected')) {
 				document.querySelectorAll('.selected')[i].classList.remove('selected');
@@ -24,19 +22,17 @@ class ListItem extends Component {
 	}
 	render() {
 		return (
-			<div className="ListItem">
-				<button className="ListItem-Button" onClick={this.handleClick}>
-					<p>{this.props.musicalName}</p>
-					<p>{this.props.venueName}</p>
-					<p className="ListItem-Dates">{`${this.props.dates.start.slice(
-						5,
-						7
-					)}/${this.props.dates.start.slice(8, 10)} - ${this.props.dates.end.slice(
-						5,
-						7
-					)}/${this.props.dates.end.slice(8, 10)}`}</p>
-				</button>
-			</div>
+			<button className="ListItem-Button" onClick={this.handleClick}>
+				<p>{this.props.performance.musicalName}</p>
+				<p>{this.props.performance.venueName}</p>
+				<p className="ListItem-Dates">{`${this.props.performance.dates.start.slice(
+					5,
+					7
+				)}/${this.props.performance.dates.start.slice(8, 10)} - ${this.props.performance.dates.end.slice(
+					5,
+					7
+				)}/${this.props.performance.dates.end.slice(8, 10)}`}</p>
+			</button>
 		);
 	}
 }
