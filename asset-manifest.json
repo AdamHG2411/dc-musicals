@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dc-musicals/static/css/main.b4c0521e.chunk.css",
+    "main.js": "/dc-musicals/static/js/main.68de48bf.chunk.js",
+    "main.js.map": "/dc-musicals/static/js/main.68de48bf.chunk.js.map",
+    "runtime~main.js": "/dc-musicals/static/js/runtime~main.a474b1a7.js",
+    "runtime~main.js.map": "/dc-musicals/static/js/runtime~main.a474b1a7.js.map",
+    "static/js/2.0f58faaa.chunk.js": "/dc-musicals/static/js/2.0f58faaa.chunk.js",
+    "static/js/2.0f58faaa.chunk.js.map": "/dc-musicals/static/js/2.0f58faaa.chunk.js.map",
+    "index.html": "/dc-musicals/index.html",
+    "precache-manifest.55a9b0b22964c27465ccfc8320ea3317.js": "/dc-musicals/precache-manifest.55a9b0b22964c27465ccfc8320ea3317.js",
+    "service-worker.js": "/dc-musicals/service-worker.js",
+    "static/css/main.b4c0521e.chunk.css.map": "/dc-musicals/static/css/main.b4c0521e.chunk.css.map"
+  }
+}
