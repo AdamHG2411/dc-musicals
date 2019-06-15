@@ -30,6 +30,7 @@ Wait for Heroku to wake up and fetch data from the database, then click and upco
 
 ## Contribute
 [Issues](https://www.github.com/adamhg2411/dc-musicals/issues)
+
 [Pull Requests](https://www.github.com/adamhg2411/dc-musicals/pulls)
 
 ## Credits
