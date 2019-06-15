@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project
+---
+This is a simple single-page application for finding info on upcoming musical performances in the DC area. It's not comprehensive. I only listed performances I found quickly through a Google Search.
 
-## Available Scripts
+Be patient while it loads. The back-end is hosted on Heroku and it takes a few seconds to wake up.
 
-In the project directory, you can run:
+[DC Musicals](https://adamhg2411.github.io/dc-musicals)
 
-### `npm start`
+## Purpose
+---
+I built this app as a simple front-end for my second General Assembly Software Engineering Immersive project. The project was to build an API, but I decided to start learning React and build a user interface for accessing the data. I am going to try to keep this up to date for any other musical fans in the DC area, but no guarantees.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instructions
+---
+Wait for Heroku to wake up and fetch data from the database, then click and upcoming performance for more details and a Spotify widget for playing the soundtrack. I'll include links to purchase tickets where available. An earlier version of this app listed ticket prices. Those have been removed as prices can fluctuate quite a bit and I'm not keeping tabs on them.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Built with:
+---
+**Front End** [repo](https://www.github.com/adamhg2411/dc-musicals)
+* HTML
+* CSS
+* JavaScript
+* React
+* Create-React-App
+* GitHub Pages
 
-### `npm test`
+**Back End** [repo](https://www.github.com/adamhg2411/musicals-api)
+* JavaScript
+* Node.js
+* Express
+* MongoDB
+* Mongoose
+* Heroku
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contribute
+[Issues](https://www.github.com/adamhg2411/dc-musicals/issues)
+[Pull Requests](https://www.github.com/adamhg2411/dc-musicals/pulls)
 
-### `npm run build`
+## Credits
+---
+Many thanks to the programmers involved in all project dependencies as well as to the casts, crews, and staff that enable my musical addiction.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+---
+[MIT](https://opensource.org/licenses/MIT) © 2019 Adam Grider

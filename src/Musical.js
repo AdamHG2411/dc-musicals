@@ -16,9 +16,6 @@ class Musical extends Component {
 							{this.props.musicalData.name} ({this.props.musicalData.premiereYear})
 						</p>
 						<p className="Musical-Composer">{this.props.musicalData.composer}</p>
-						<p className="Musical-Wikipedia">
-							<a href="https://en.wikipedia.org/wiki/Into_the_Woods">Learn More</a>
-						</p>
 					</div>
 					<div>
 						<h2>Tracklist</h2>
