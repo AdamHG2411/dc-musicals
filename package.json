@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://adamhg2411.github.io/dc-musicals",
 	"dependencies": {
+		"axios": "^0.19.0",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-scripts": "3.0.0"
@@ -20,8 +21,16 @@
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
 	"devDependencies": {
 		"gh-pages": "^2.0.1"

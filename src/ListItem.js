@@ -1,31 +1,49 @@
 import React, { Component } from 'react';
+import Musical from './Musical.js';
 import './ListItem.css';
 
 class ListItem extends Component {
 	constructor(props) {
 		super(props);
+		console.log(this.props);
+		this.state = {
+			selected: false
+		};
 		this.handleClick = this.handleClick.bind(this);
 	}
+
 	handleClick(evt) {
 		evt.preventDefault();
-		console.log('ListItem: handleClick');
-		let selectedObj = this.props.performance;
-		this.props.updateSelection(selectedObj);
+		let selected = !this.state.selected;
+		this.setState({ selected });
 	}
+
 	render() {
 		console.log('ListItem: render');
+		function formattedDate(iso) {
+			return `${iso.slice(5, 7)}/${iso.slice(8, 10)}/${iso.slice(0, 4)}`;
+		}
+		let moreInfo;
+		if (this.state.selected) {
+			moreInfo = (
+				<div>
+					<Musical {...this.props} />
+				</div>
+			);
+		} else {
+			moreInfo = null;
+		}
 		return (
-			<button className="ListItem-Button" onClick={this.handleClick}>
-				<p>{this.props.performance.musicalName}</p>
-				<p>{this.props.performance.venueName}</p>
-				<p className="ListItem-Dates">{`${this.props.performance.dates.start.slice(
-					5,
-					7
-				)}/${this.props.performance.dates.start.slice(8, 10)} - ${this.props.performance.dates.end.slice(
-					5,
-					7
-				)}/${this.props.performance.dates.end.slice(8, 10)}`}</p>
-			</button>
+			<div className="ListItem">
+				<button className="ListItem-Button" onClick={this.handleClick}>
+					<p>{this.props.musicalName}</p>
+					<p>{this.props.venueName}</p>
+					<p className="ListItem-Dates">{`${formattedDate(this.props.dates.start)} - ${formattedDate(
+						this.props.dates.end
+					)}`}</p>
+				</button>
+				{moreInfo}
+			</div>
 		);
 	}
 }
