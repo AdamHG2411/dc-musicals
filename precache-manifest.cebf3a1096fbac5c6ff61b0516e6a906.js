@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb5b3911e8ac37686d0602c7dd7e1594",
+    "revision": "e678276b49c607847229d126ffd42d30",
     "url": "/dc-musicals/index.html"
   },
   {
